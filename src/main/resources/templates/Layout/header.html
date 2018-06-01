@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+ <html lang="en"xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+    <style>
+        #btnStyle:hover{
+            background-color: red;
+        }
+        .borderStyle{
+            border-color: #a3080c;
+            color: #a3080c;
+        }
+    </style>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<nav th:fragment="header" class="navbar navbar-light bg-light">
+    <div class="col-md-3">
+        <a class="navbar-brand" href="#">
+            <img alt="" th:src="@{'/uploaded/kfc-logo02.png'}" width="300" height="140">
+        </a>
+    </div>
+    <div class="col-md-7">
+        <form class="row">
+            <div class="col-md-8">
+                <input class="form-control borderStyle" type="search" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="col-md-4">
+                <button class="btn btn-outline-success borderStyle" id="btnStyle" type="submit">Search</button>
+            </div>
+        </form>
+    </div>
+    <div class="col-md-2 mt-3">
+        <img th:src="@{/uploaded/kfc-logo.png}" alt=""
+             class="img-thumbnail rounded-circle w-25 mr-2 float-left">
+        <div class="mt-3">
+            <strong>Colonel Sanders</strong>
+            <a style="color: black" href="#">(Logout)</a>
+        </div>
+    </div>
+</nav>
+</body>
+</html>

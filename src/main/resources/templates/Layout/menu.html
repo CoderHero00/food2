@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <div th:fragment="menu" class="col-2">
+        <div class="nav flex-column nav-tabs">
+            <a class="nav-link" style="color: white"href="/">Home</a>
+            <a class="nav-link" style="color: white"href="/foo/create">Product Manager (Add Product)</a>
+            <a class="nav-link" style="color: white"href="/foo/list">List Product</a>
+            <a class="nav-link" style="color: white"href="#">Order Manager</a>
+            <a class="nav-link" style="color: white"href="#">User Manager</a>
+            <a class="nav-link" style="color: white"href="#">About</a>
+        </div>
+    </div>
+</body>
+</html>
